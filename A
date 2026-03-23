@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find 40 Challenge</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #aee;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.grid {
+  font-size: 22px;
+  line-height: 2;
+  word-spacing: 10px;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.repeat {
+  margin-bottom: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="app"></div>
+
+<script>
+function createPuzzle() {
+  return 
+  <div class="container repeat">
+    <div class="title">🔍 FIND THE NUMBER 40</div>
+    <div class="grid">
+      04 04 04 04 04 04 04 04<br>
+      04 04 04 04 04 04 04 04<br>
+      04 04 04 04 04 04 04 04<br>
+      04 04 04 04 04 04 04 04<br>
+      04 04 04 40 04 04 04 04<br>
+      04 04 04 04 04 04 04 04<br>
+      04 04 04 04 04 04 04 04<br>
+      04 04 04 04 04 04 04 04<br>
+    </div>
+    <div class="footer">👍 LIKE & SUBSCRIBE 🔔</div>
+  </div>
+  ;
+}
+
+const app = document.getElementById("app");
+
+// 20 বার repeat করবে (scroll করলে বারবার দেখাবে)
+for (let i = 0; i < 20; i++) {
+  app.innerHTML += createPuzzle();
+}
+</script>
+
+</body>
+</html>
